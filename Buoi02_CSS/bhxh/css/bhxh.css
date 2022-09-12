@@ -1,0 +1,39 @@
+#NoiDung{/* Tương tự main */
+    width: 960px;
+
+}
+
+#DauTrang{ /* Tương tự header */
+    width: 960px;
+    height: 192px;
+    background: url(../images/banner.jpg);
+}
+
+#GiuaTrang{ /* Tương tự section */
+    width: 960px;
+    
+}
+
+#BenTrai{  /* Tương tự aside */
+    width: 220px;
+    float: left;
+
+}
+
+#BenPhai{ /* Tương tự article */
+    width: 730px;
+    float :right;
+    
+    
+    
+    
+
+}
+
+#CuoiTrang{ /* Tương tự footer */
+    width: 960px;
+    height: 30px;
+    background: chocolate;
+    clear: both;
+
+}

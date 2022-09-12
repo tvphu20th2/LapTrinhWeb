@@ -1,0 +1,68 @@
+main{
+    width : 900px;
+    margin: 0 auto 0 auto;
+   
+}
+a:link{
+    text-decoration: none;
+} 
+
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+a:visited{
+    text-decoration: grey;
+}
+
+header{
+    width : 900px;
+    height: 143px;
+    background: url(../images/banner.jpg);
+}
+
+section{
+    width : 900px;
+}
+
+aside{
+    width : 200px;
+    float: left;
+   
+}
+aside h2{
+    color: blue;
+    background: url(../images/t_l.gif);
+    height: 30px;
+    font-size: 22px;
+    padding: 5px 0px 0px 5px;   /* khoảng không */
+    box-sizing: border-box;    /*ko ảnh hưởng chiều cao*/
+    margin-bottom: 0 ;/* làm mất lề dưới */
+}
+aside ul {
+    list-style-image: url(../images/li.gif); /* icon ds*/
+    padding: 5px 0px 5px 10px;
+    border: solid 1px blue;  /* đường viền */
+    margin-top: 0; /* làm mất lề trên */
+}
+
+article{
+    width : 690px;
+    float: right; /*vị trí trôi về bên phải */
+    background-image: url(../images/bg_post.gif) no-repeat bottom right;
+}
+
+article p {
+    text-align: justify;
+}
+footer{
+    width : 900px;
+    height: 50px;
+    background:blue;
+    clear:both;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 5px;
+}

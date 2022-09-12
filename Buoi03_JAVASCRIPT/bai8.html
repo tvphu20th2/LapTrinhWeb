@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 8</title>
+		<meta charset="utf-8" />
+		<style>
+			body {
+				font-family: Tahoma;
+				font-size: 11pt;
+			}
+			select {
+				font-size: 11pt;
+				width: 100px;
+				padding: 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Đổi màu nền và màu chữ</h1>
+		<form name="f">
+			<table>
+				<tr>
+					<td>Chọn màu nền</td>
+					<td>
+						<select id="optnen" onchange="changeBG()">
+							<option value="white">White</option>
+							<option value="pink">Pink</option>
+							<option value="lightblue">Light blue</option>
+							<option value="lightgreen">Light green</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Chọn màu chữ</td>
+					<td>
+						<select id="optchu" onchange="changeChu()">
+							<option value="black">Black</option>
+							<option value="red">Red</option>
+							<option value="blue">Blue</option>
+							<option value="green">Green</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<script>
+			function changeBG(){
+				var nen = document.getElementById("optnen").value;
+				document.body.style.backgroundColor=nen;
+			}
+			function changeChu(){
+				var chu = document.getElementById("optchu").value;
+				document.body.style.color=chu;
+			}
+		</script>
+	</body>
+</html>

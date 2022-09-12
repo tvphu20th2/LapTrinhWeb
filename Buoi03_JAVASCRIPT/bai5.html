@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 5</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<div id="ketQua"></div>
+		<script>
+			function thoigian(){
+				var hT = new Date();
+				var gio = hT.getHours();
+				var phut = hT.getMinutes();
+				var giay = hT.getSeconds();
+				document.getElementById("ketQua").innerHTML=("Bây giờ là "+gio+":"+phut+":"+giay);
+				//sau 1 giây thì gọi lại hàm thời gian
+				setTimeout(thoigian,1000);
+			}
+			thoigian();
+			
+		</script>
+		
+		
+		
+	</body>
+</html>

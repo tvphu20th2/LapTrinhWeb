@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+		<style>
+			table{
+				border:1px solid blue;
+				box-shadow:5px 5px 5px grey; 
+				border-radius:4px;
+				padding: 12px; 
+				font-weight: bold;
+				font-size: 18px;
+				margin: auto;
+			}	
+			th{
+				font-size: 22px;
+				color: blue;
+			}			
+		</style>
+		<script language="Javascript">
+			<!-- Bổ sung phương thức tinhtien -->
+			
+			
+			
+		</script>
+    </head>
+    <body>    
+		<form name="f">
+		<table>
+			<tr>
+                <th colspan="2">Tính tiền phòng</th>
+            </tr>
+			<tr>
+                <td>Số ngày </td>
+				<td> <input type='text' name='songay' size ="10"  value='' /></td>
+            </tr>  
+			<tr>
+                <td>Loại phòng </td>
+				<td>
+					<select name="loaiphong">
+						<option value = "1">Phòng Quạt </option>	
+						<option value = "2">Phòng Máy Lạnh </option>						
+					</select>					
+				</td>
+            </tr> 			
+			<tr>
+				<td colspan="2">					
+					<input type="button" name="Tinh" value="Tính tiền (USD)" onClick="tinhtien()" />
+					<input type="text" name="sotien" size="10" disabled="true"/>
+				</td>
+			</tr>
+			
+        </table>
+        </form>
+    </body>
+</html>

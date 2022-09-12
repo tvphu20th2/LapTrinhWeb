@@ -1,0 +1,36 @@
+body{
+	
+}
+#khungtrang{
+	width:800px;
+	background-color:white;
+	margin:auto;
+}
+header{
+	height:90px;
+}
+aside{
+	width:200px;
+	float:left;
+}
+section{
+	width:579px;
+	padding:10px;
+	float:left;
+}
+aside div{ 
+	/* Khung chứa liên kết */
+	
+}
+aside a{
+	/* Liên kết */
+	
+}
+aside a:hover{
+	color:white;
+	background-color:maroon;
+}	
+section .tieude{
+	/* Tiêu đề phần nội dung */
+	
+}

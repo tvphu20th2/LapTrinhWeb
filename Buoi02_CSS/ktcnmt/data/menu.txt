@@ -1,0 +1,26 @@
+<h2>Tổng quan</h2>
+<ul>
+	<li><a href="#">Giới thiệu</a></li>
+	<li><a href="#">Sơ đồ tổ chức</a></li>
+	<li><a href="#">Danh bạ điện thoại</a></li>
+	<li><a href="#">Liên hệ</a></li>
+</ul>
+
+<h2>Thông tin đào tạo</h2>
+<ul>
+	<li><a href="#">Kỹ thuật Phần mềm</a></li>
+	<li><a href="#">Kỹ thuật Môi trường</a></li>
+	<li><a href="#">Đại học Sư phạm Tin học</a></li>
+	<li><a href="#">Cao đẳng Sư phạm Tin học</a></li>
+	<li><a href="#">Trung cấp Tin học</a></li>
+	<li><a href="#">Cử nhân Tin học Tại chức</a></li>
+</ul>
+
+<h2>Liên kết ngoài</h2>
+<ul>
+	<li><a href="http://feba.agu.edu.vn">Khoa Kinh tế - QTKD</a></li>
+	<li><a href="http://fpe.agu.edu.vn">Khoa Lý luận chính trị</a></li>
+	<li><a href="http://agri.agu.edu.vn">Khoa Nông nghiệp - TNTN</a></li>
+	<li><a href="http://peda.agu.edu.vn">Khoa Sư phạm</a></li>
+	<li><a href="http://fac.agu.edu.vn">Khoa Văn hóa nghệ thuật</a></li>
+</ul>

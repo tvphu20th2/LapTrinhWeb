@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 6</title>
+		<meta charset="utf-8" />
+		<style>
+			body {
+				font-family: Tahoma;
+				font-size: 1rem;
+			}
+			
+			table {
+				border-collapse: collapse;
+			}
+			
+			th {
+				border: 1px solid #dcdcdc;
+				padding: 5px;
+			}
+			
+			td {
+				border: 1px solid #dcdcdc;
+				padding: 5px;
+			}
+			
+			input[type="number"], input[type="text"] {
+				padding: 4px;
+			}
+			
+			input[type="text"] {
+				color: #ff0000;
+			}
+			
+			input[type="button"] {
+				padding: 4px;
+				border: 1px solid #0000ff;
+				background-color: #00ff7f;
+				width: 80px;
+			}
+		</style>
+		<script>
+			function ChuyenDoi()
+			{
+				//lấy năm dương lịch
+				var ndl=f.numNamDuongLich.value;
+				//báo lỗi nếu năm dương lịch bỏ trống hoặc không phải là số dương
+				if(ndl==""|| ndl<=0){
+					alert("Năm dương lịch không được bỏ trống và phải là số dương.");
+				}
+				else
+				{
+					var can =["Canh","Tân","Nhâm","Quý","Giáp","Ất","Bính","Đinh","Mậu","Kỷ"];
+					var chi =["Thân","Dậu","Tuất","Hợi","Tý","Sửu","Dần","Mẹo","Thìn","Tỵ",	"Ngọ",	"Mùi"];
+					var tinhCan=ndl%10;
+					var tinhChi=ndl%12;
+					f.txtNamAmLich.value=can[tinhCan]+" "+chi[tinhChi];
+					document.getElementById("imgHinhAnh").src='images/'+tinhChi+".jpg";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form action="#chuyendoi" method="get" name="f">
+			<table align="center">
+				<tr>
+					<th colspan="3">TÍNH NĂM ÂM LỊCH</th>
+				</tr>
+				<tr>
+					<td>Năm dương lịch</td>
+					<td align="center"><img src="images/loader.gif" id="imgHinhAnh" /></td>
+					<td>Năm âm lịch</td>
+				</tr>
+				<tr>
+					<td><input type="number" min="1970" max="9999" id="numNamDuongLich" name="numNamDuongLich" /></td>
+					<td align="center"><input onclick="ChuyenDoi()" type="button" name="btnTinh" value="=>" /></td>
+					<td><input type="text" id="txtNamAmLich" name="txtNamAmLich" /></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

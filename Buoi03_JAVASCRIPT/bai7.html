@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 7</title>
+		<meta charset="utf-8" />
+		<style>
+			table {
+				border: 1px solid blue;
+				box-shadow: 5px 5px 5px grey; 
+				border-radius: 4px;
+				padding: 12px; 
+				font-weight: bold;
+				font-size: 18px;
+				margin: auto;
+			}
+			th {
+				font-size: 22px;
+				color: blue;
+			}		
+		</style>
+		<script>
+			// Bổ sung phương thức tinhtien()
+			//Báo lỗi khi số ngày bỏ trống là chữ hoặc bé hơn 0
+			function tinhtien(){
+				var ngay=f.songay.value;
+			if(ngay==""||isNaN(ngay)||ngay<=0){
+				alert("Số ngày không được bỏ trống,không phải là chữ và phải lớn hơn 0.");
+			}
+			else{
+				var tongtien=0;
+				if(f.loaiphong.value=="1"){
+					tongtien=ngay*6;
+				}
+				else{
+					tongtien=ngay*9;
+				}
+				if(ngay>10){
+					tongtien-=tongtien*0.02;
+				
+				}
+			}
+			f.sotien.value=tongtien;
+
+			}
+			
+		</script>
+	</head>
+	<body>
+		<form name="f">
+			<table>
+				<tr>
+					<th colspan="2">Tính tiền phòng</th>
+				</tr>
+				<tr>
+					<td>Số ngày</td>
+					<td><input type="text" name="songay" size ="10" /></td>
+				</tr>
+				<tr>
+					<td>Loại phòng</td>
+					<td>
+						<select name="loaiphong">
+							<option value="1">Phòng Quạt</option>
+							<option value="2">Phòng Máy Lạnh</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="button" name="Tinh" value="Tính tiền (USD)" onclick="tinhtien()" />
+						<input type="text" name="sotien" size="10" disabled />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

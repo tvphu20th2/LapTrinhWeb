@@ -1,0 +1,40 @@
+body {
+    font-family: Tahoma;
+    font-size: 11pt;
+}
+
+th {
+    font-size: 13pt;
+    background: red;
+    color:white;
+}
+
+td {
+    padding: 5px;
+}
+
+
+input{
+    border: 1px dotted rgb(43, 73, 47);
+    padding: 5px ;
+    background: lightblue;
+    width: 280px;
+}
+
+input:focus{
+    border: 1px solid blue;
+    background: transparent;
+}
+
+button {
+    background: red;
+    color: white;
+    border: 5px;
+    padding: 5px 20px;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid red;
+    background: url(images/bgbottom_yellow.jpg)  left bottom repeat-x;
+}
+

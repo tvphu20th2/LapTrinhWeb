@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>FORM 05</title>
+	<meta charset="utf-8">
+	<!-- Chèn liên kết tập tin CSS vào đây -->
+	<link rel="stylesheet" href="form05.css">
+	<!-- Chèn liên kết các tập tin JavaScripts vào đây -->
+	<script src="form05.js"></script>
+</head>
+
+<body>
+	<form name ='f'action="https://fit.agu.edu.vn/demo.php" method="post">
+		<table border="0" width="400" align="center">
+			<tr>
+				<th colspan="2">Đăng Bài Viết</th>
+			</tr>
+			<tr>
+				<td>Tiêu Đề :</td><br>
+			</tr>
+			<tr>
+				
+				<td><input  type="text" name="TieuDe" id="TieuDe"  ></td>
+			</tr>
+			<tr>
+				<td>Chuyên Mục:</td><br>
+			</tr>
+			<tr>
+				
+				<td>
+					<select name="ChuyenMuc">
+						<option value="">--Chọn--</option>
+						<option>Giải trí</option>
+						<option >Kinh doanh</option>
+						<option>Thế giới</option>
+						<option>Thể thao</option>
+						<option>Tuyển sinh</option>
+						<option>Việc làm - Rao vặt</option>
+						<option>Xã hội</option>
+						<option>Chuyên mục khác.</option>
+					
+
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Tóm Tắt Bài Viết :</td></tr><br>
+			</tr>
+			<tr>
+				
+				<td><textarea name="TomTat"   ></textarea></td>
+			</tr>
+			<tr>
+				<td>Nội Dung Bài Viết:</td><br>
+			</tr>
+			<tr>
+				
+				<td><textarea name="NoiDung"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<button onclick="return KiemTra()" >Đăng Bài Viết </button>
+					<button type="reset">Xóa Làm Lại</button>
+				</td>
+				
+			</tr>
+		</table>
+	</form>
+</body>
+
+
+</html>
