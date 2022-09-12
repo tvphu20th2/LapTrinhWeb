@@ -1,0 +1,47 @@
+body {
+	font-family: Arial;
+	font-size: 11pt;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+	border: 1px solid #1e90ff;
+	width: 450px;
+}
+
+th {
+	font-size: 16pt;
+	background-color: #1e90ff;
+	color: #ffffff;
+}
+
+th, td {
+	padding: 6px;
+}
+
+input[type="text"], input[type="email"], textarea, select {
+	padding: 6px;
+	width: 310px;
+	border: 1px dotted #00BFFF;
+	background-color: #E0FFFF;
+}
+
+textarea {
+	height: 100px;
+}
+
+select {
+	width: 105px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+	border: 1px solid #1E90FF;
+}
+
+input[type="submit"], input[type="reset"] {
+	background-color: #1e90ff;
+	color: #ffffff;
+	padding: 5px 19px;
+	border: 1px solid #006400;
+}

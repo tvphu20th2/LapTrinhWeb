@@ -1,0 +1,36 @@
+<?php
+// Bổ sung mã PHP
+			$servername = "localhost";
+			$username = "root";
+			$password = "vertrigo";
+			$dbname = "dulieu1";
+			
+			/* Bổ sung code */
+			// Bổ sung mã PHP
+
+		// kết nối và chọn CSDL
+		$link = mysqli_connect($servername, $username,$password);
+		mysqli_select_db ($link ,$dbname);
+		
+		mysqli_set_charset($link ,'latin1');
+		
+		$txtten =$_POST['txtten'];
+		$txtgia =$_POST['txtgia'];
+		$txtdm =$_POST['txtdm'];
+
+		//xử lý truy vấn select
+		$sql="INSERT INTO `sanpham`( `tensp`, `gia`, `danhmuc`)
+		VALUES ('$txtten','$txtgia','$txtdm') ";
+		$kq = mysqli_query($link , $sql);
+	
+		// hiển thị dữ liệu
+		if($d = mysqli_fetch_array($kq))
+		
+			echo  'Thêm thành công';
+		else 
+			echo mysqli_error($kq);
+			
+		
+
+?>
+<a href="form.php">Thêm </s>

@@ -1,0 +1,65 @@
+<?php
+	// Bổ sung mã PHP
+			$servername = "localhost";
+			$username = "root";
+			$password = "vertrigo";
+			$dbname = "laptrinhweb";
+			
+
+		// kết nối và chọn CSDL
+		$link = mysqli_connect($servername, $username,$password);
+		mysqli_select_db ($link ,$dbname);
+		
+		//mysqli_set_charset($link ,'latin1');
+		
+		
+		//xử lý truy vấn select
+		$sql="SELECT * FROM `tbl_gopykythuat` WHERE 1";
+		$kq = mysqli_query($link , $sql);
+		$stt= 1;
+		
+		
+	
+?>
+<!DOCTYPE html>		
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>PHP & MYSQL</title>
+</head>
+
+<body>
+	<h3>Danh sách các ý kiến đóng góp</h3>
+	<table class="table table-bordered table-hover table-sm">
+		<thead>
+			<tr>
+				<th width="5%">#</th>
+				<th width="22%">Họ và tên</th>
+				<th width="15%">Email</th>
+				<th width="10%">Điện thoại</th>
+				<th width="18%">Lĩnh vực</th>
+				<th width="30%">Nội dung góp ý</th>
+			</tr>
+		</thead>
+		<tbody>
+			<?php
+				while($d = mysqli_fetch_array($kq))
+		{
+			echo  '<tr>
+			<td width="5%"> '.$stt.'</td>			
+			<td width="22%"> '.$d['HoVaTen'].'" </td>				
+			<td width="15%">'.$d['Email'].'</td>
+			<td width="10%">'.$d['DienThoai'].'</td>
+			<td width="18%">'.$d['LinhVucGopY'].'</td>				
+			<td width="30%">'.$d['NoiDungGopY'].'</td>
+					</tr>';
+				$stt++;
+		
+		}
+			?>
+		</tbody>
+	</table>
+</body>
+
+</html>
